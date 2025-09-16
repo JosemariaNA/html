@@ -1,0 +1,117 @@
+body { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(255,255,255,.25); text-align: center; margin: 0 }
+
+.titulo {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 0;
+  
+  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+nav ul{
+      list-style: none;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+}
+
+nav a:hover{
+      color:#1abc9c;
+}
+
+li{
+    border: 4px double rgba(255,255,255,.25);
+    border-width: 4px 0;
+    padding: 20px;
+}
+
+a{
+      color: #fff;
+}
+
+a:hover{
+      text-decoration: underline;
+}
+
+.secciones{
+    max-width: 800px;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0,1);
+    text-align: left;
+  }
+
+.subtitulo{
+    font-size: 2em;
+    color: black;
+    padding: 5px;
+}
+
+.texto{
+    color: black;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #00b4519c;
+    color: #fff;
+    margin-top: 40px;
+    text-shadow:.03em .03em 0 rgb(109, 109, 109);
+}
+
+.c_info{
+    color: black;
+    text-align: left;
+    padding-left: 42px;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.contacto_correo{
+    padding: 10px;
+    max-width: 300px;
+    margin: 10px auto;
+}
